@@ -1,0 +1,33 @@
+Advanced Python: OOP, Decorators, and Best Practices
+
+Python is a versatile language used extensively in data science, web development, and automation.
+
+Object-Oriented Programming (OOP):
+- Classes: Blueprints for creating objects
+- Inheritance: Child classes inherit from parent classes
+- Polymorphism: Objects of different types respond to same method names
+- Encapsulation: Hide internal details, expose only necessary interfaces
+
+Decorators:
+- Functions that modify behavior of other functions
+- Used for: logging, authentication, performance measurement
+- Example: @property, @staticmethod, @classmethod
+
+List Comprehensions:
+- Concise way to create lists
+- [x**2 for x in range(10)] creates squares of 0-9
+
+Generators:
+- Memory-efficient way to create large sequences
+- Use 'yield' instead of 'return'
+- Useful for: large datasets, real-time data streaming
+
+Context Managers:
+- 'with' statement for resource management
+- Automatically opens and closes files
+- Example: with open('file.txt') as f: ...
+
+Type Hints:
+- Specify expected data types for function arguments and returns
+- def greet(name: str) -> str: return f'Hello, {name}'
+- Improves code readability and enables IDE autocomplete

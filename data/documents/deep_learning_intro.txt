@@ -1,0 +1,40 @@
+Deep Learning: Neural Networks from Basics to Advanced
+
+Deep learning is a subset of machine learning based on artificial neural networks.
+Inspired by biological neurons, deep learning models can learn complex patterns from data.
+
+Perceptron (Single Neuron):
+- Basic unit of neural networks
+- Takes multiple inputs, produces single output
+- Formula: output = activation(weights * inputs + bias)
+- Cannot solve non-linear problems alone
+
+Multilayer Perceptron (Neural Network):
+- Multiple layers of neurons connected together
+- Input layer → Hidden layers → Output layer
+- Can solve complex, non-linear problems
+
+Activation Functions:
+- ReLU (Rectified Linear Unit): max(0, x) - most common in hidden layers
+- Sigmoid: 1/(1+e^-x) - squashes output to 0-1, used in binary classification
+- Tanh: Similar to sigmoid but -1 to 1 range
+- Softmax: For multi-class classification
+
+Backpropagation:
+- Algorithm to train neural networks
+- Computes gradients (direction of steepest descent)
+- Updates weights to minimize loss
+- Learning rate: controls size of weight updates
+
+Common Architectures:
+- CNN (Convolutional Neural Networks): For images
+- RNN (Recurrent Neural Networks): For sequences (text, time series)
+- LSTM (Long Short-Term Memory): Improved RNN, handles long sequences better
+- Transformers: State-of-the-art for NLP and other domains
+
+Overfitting and Regularization:
+- Overfitting: Model learns training data too well, performs poorly on new data
+- Regularization techniques:
+* Dropout: Randomly disable neurons during training
+* L1/L2 Regularization: Add penalty for large weights
+* Early Stopping: Stop training when validation loss increases

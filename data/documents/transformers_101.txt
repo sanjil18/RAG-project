@@ -1,0 +1,47 @@
+Transformers: The Architecture That Changed NLP
+
+Transformers are deep learning models that have revolutionized natural language processing.
+Introduced in 2017 by Vaswani et al. in the paper "Attention is All You Need", transformers
+have become the foundation for state-of-the-art NLP systems including BERT, GPT, and T5.
+
+The key innovation of transformers is the self-attention mechanism, which allows the model to
+focus on different parts of the input simultaneously. Unlike RNNs that process text sequentially
+(one word at a time), transformers process all words in parallel, making them much faster and
+more efficient to train.
+
+Core Components:
+1. Tokenizer: Converts text into tokens (subwords or words)
+2. Embedding Layer: Converts tokens to dense vectors (384 or 768 dimensions)
+3. Positional Encoding: Adds position information to embeddings
+4. Multi-head Self-Attention: Allows model to attend to different representation spaces
+5. Feed-Forward Network: Non-linear transformation
+6. Layer Normalization: Stabilizes training
+
+Self-Attention Explained:
+For each word, self-attention computes:
+- Query: "What am I looking for?"
+- Key: "What information do I have?"
+- Value: "What information should I pass to the next layer?"
+
+By computing attention scores between queries and keys, the model learns which words are
+relevant to each other. This is done in parallel for multiple "heads" (multi-head attention),
+allowing the model to attend to different representation subspaces.
+
+Advantages over RNNs:
+- Parallelizable: All words processed simultaneously
+- Better long-range dependencies: Can directly attend to distant words
+- Scalable: Can be trained on larger datasets
+- Transfer learning: Pre-trained models can be fine-tuned for downstream tasks
+
+Applications:
+- Machine Translation (Google Translate)
+- Question Answering (SQuAD)
+- Text Classification (Sentiment analysis)
+- Named Entity Recognition
+- Language Generation (GPT models)
+
+Variants:
+- BERT: Bidirectional encoder from transformer (good for understanding)
+- GPT: Generative pre-trained transformer (good for generation)
+- T5: Text-to-text transfer transformer (versatile)
+- RoBERTa: Robustly optimized BERT (improved BERT)

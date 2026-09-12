@@ -1,0 +1,44 @@
+Database Fundamentals: SQL and NoSQL
+
+A database is an organized collection of structured data stored and accessed electronically.
+Databases are essential components of modern applications, from social media to banking systems.
+
+Types of Databases:
+
+1. Relational Databases (SQL)
+- Store data in tables with rows and columns
+- Use SQL (Structured Query Language) for querying
+- Examples: PostgreSQL, MySQL, Oracle, SQL Server
+- ACID properties: Atomicity, Consistency, Isolation, Durability
+- Good for: Structured data, transactions, complex queries
+
+2. NoSQL Databases
+- Flexible schema (no fixed table structure)
+- Examples: MongoDB (document), Redis (key-value), Cassandra (wide-column)
+- BASE properties: Basically Available, Soft state, Eventual consistency
+- Good for: Unstructured data, high scalability, real-time data
+
+3. Vector Databases (New)
+- Store high-dimensional vectors (embeddings)
+- Enable similarity search
+- Examples: Chroma, Pinecone, Weaviate, Milvus
+- Used for: RAG, semantic search, recommendation systems
+
+SQL Basics:
+SELECT: Retrieve data
+INSERT: Add new data
+UPDATE: Modify existing data
+DELETE: Remove data
+WHERE: Filter conditions
+JOIN: Combine tables
+
+Indexing:
+- Speeds up queries
+- B-tree indexes for range queries
+- Hash indexes for exact matches
+- Trade-off: faster queries, slower writes
+
+Normalization:
+- Process of organizing database to reduce redundancy
+- Normal forms: 1NF, 2NF, 3NF, BCNF
+- Goal: Minimize data duplication, maintain data integrity
